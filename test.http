@@ -1,0 +1,32 @@
+curl http://localhost:8080/greeting?name=ss
+
+####
+
+GET http://localhost:8080/hello/odds
+
+###
+POST http://localhost:8080/users
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJOYW1lIjoiT0REUyIsImV4cCI6MTcwNjYxMTgyMX0.sBIl54njgPWteJEseR9fhggsVA7dqhFN29D9GLPMIW0
+
+{
+    "name" : "n"
+}
+
+###
+GET http://localhost:8080/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJOYW1lIjoiT0REUyIsImV4cCI6MTcwNjYxMTgyMX0.sBIl54njgPWteJEseR9fhggsVA7dqhFN29D9GLPMIW0
+
+###
+DELETE http://localhost:8080/users/11
+
+###
+PATCH  http://localhost:8080/users/1
+Content-Type: application/json
+
+{
+    "name" : "u"
+}
+
+###
+GET  http://localhost:8080/tokenz
